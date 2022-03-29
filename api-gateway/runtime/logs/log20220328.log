@@ -1,0 +1,1 @@
+[INFO][pkg.go:14]2022/03/28 10:27:24 userService--fallback failed with '{"id":"go.micro.client","code":500,"detail":"service rpcUserService: not found","status":"Internal Server Error"}'. run error was '{"id":"go.micro.client","code":500,"detail":"service rpcUserService: not found","status":"Internal Server Error"}'
