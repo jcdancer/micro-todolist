@@ -17,7 +17,7 @@ func main() {
 	)
 	// 得到一个微服务实例
 	microService := micro.NewService(
-		micro.Name("rpcUserService"), // 微服务名
+		micro.Name("rpcTaskService"), // 微服务名
 		micro.Address("127.0.0.1:8083"),
 		micro.Registry(etcdReg), // etcd注册件
 	)

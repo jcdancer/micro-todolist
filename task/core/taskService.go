@@ -36,7 +36,7 @@ func (*TaskService) CreateTask(ctx context.Context, req *services.TaskRequest, r
 	return nil
 }
 
-// GetTaskList
+// GetTasksList
 // @Description: 实现备忘录服务接口，获取备忘录列表
 // @receiver *TaskService
 // @param ctx

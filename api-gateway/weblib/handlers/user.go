@@ -4,7 +4,6 @@ import (
 	"api-gateway/pkg/utils"
 	"api-gateway/services"
 	"context"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -15,12 +14,9 @@ import (
 func UserRegister(ginCtx *gin.Context) {
 	var userReq services.UserRequest
 	PanicIfUserError(ginCtx.Bind(&userReq))
-	fmt.Println("用户注册model:", userReq)
 	// 从gin.Key中取出服务实例
 	userService := ginCtx.Keys["userService"].(services.UserService)
-	fmt.Println("取出的user服务实例:", userService)
 	userResp, err := userService.UserRegister(context.Background(), &userReq)
-	fmt.Println("user服务实例调用结果:", userResp)
 	PanicIfUserError(err)
 	ginCtx.JSON(http.StatusOK, gin.H{
 		"data": userResp,

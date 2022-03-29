@@ -31,7 +31,7 @@ var _ context.Context
 var _ client.Option
 var _ server.Option
 
-// Client API for UserService services
+// Client API for UserService service
 
 type UserService interface {
 	UserLogin(ctx context.Context, in *UserRequest, opts ...client.CallOption) (*UserDetailResponse, error)
@@ -70,7 +70,7 @@ func (c *userService) UserRegister(ctx context.Context, in *UserRequest, opts ..
 	return out, nil
 }
 
-// Server API for UserService services
+// Server API for UserService service
 
 type UserServiceHandler interface {
 	UserLogin(context.Context, *UserRequest, *UserDetailResponse) error

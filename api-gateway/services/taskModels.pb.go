@@ -133,7 +133,7 @@ func (m *TaskModel) GetUpdateTime() int64 {
 }
 
 func init() {
-	proto.RegisterType((*TaskModel)(nil), "services.TaskModel")
+	proto.RegisterType((*TaskModel)(nil), "service.TaskModel")
 }
 
 func init() {

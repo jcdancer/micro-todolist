@@ -220,9 +220,9 @@ func (m *TaskDetailResponse) GetTaskDetail() *TaskModel {
 }
 
 func init() {
-	proto.RegisterType((*TaskRequest)(nil), "services.TaskRequest")
-	proto.RegisterType((*TaskListResponse)(nil), "services.TaskListResponse")
-	proto.RegisterType((*TaskDetailResponse)(nil), "services.TaskDetailResponse")
+	proto.RegisterType((*TaskRequest)(nil), "service.TaskRequest")
+	proto.RegisterType((*TaskListResponse)(nil), "service.TaskListResponse")
+	proto.RegisterType((*TaskDetailResponse)(nil), "service.TaskDetailResponse")
 }
 
 func init() {

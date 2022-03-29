@@ -31,7 +31,7 @@ var _ context.Context
 var _ client.Option
 var _ server.Option
 
-// Client API for TaskService services
+// Client API for TaskService service
 
 type TaskService interface {
 	CreateTask(ctx context.Context, in *TaskRequest, opts ...client.CallOption) (*TaskDetailResponse, error)
@@ -103,7 +103,7 @@ func (c *taskService) DeleteTask(ctx context.Context, in *TaskRequest, opts ...c
 	return out, nil
 }
 
-// Server API for TaskService services
+// Server API for TaskService service
 
 type TaskServiceHandler interface {
 	CreateTask(context.Context, *TaskRequest, *TaskDetailResponse) error
